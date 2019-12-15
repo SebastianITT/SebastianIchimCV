@@ -1,15 +1,26 @@
 
 body {
     font-family: 'Open Sans', serif;
-    padding-top: 54px;
+    padding-top: 60px;
     color:#000000;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 993px) {
     body {
         padding-top: 0;
         padding-left: 17rem;
     }
+}
+h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+}
+h2 {
+    font-size: 4rem;
+}
+
+a {
+    color: #2196f3;
 }
 
 h1,
@@ -19,23 +30,13 @@ h4,
 h5,
 h6 {
     font-family: 'Saira Extra Condensed', serif;
-    font-weight: 700;
+    font-weight: 650;
     
     color: #343a40;
 }
 
-h1 {
-    font-size: 6rem;
-    line-height: 5.5rem;
-}
 
-h2 {
-    font-size: 3.5rem;
-}
 
-a {
-    color: #2196f3;
-}
 
 a:hover,
 a:focus,
@@ -45,12 +46,10 @@ a:active {
 
 .subheading {
     text-transform: uppercase;
-    font-weight: 500;
+   
     font-family: 'Saira Extra Condensed', serif;
     font-size: 1.25rem;
-}
-.h5color{
-    color: #ffffff;
+	 font-weight: 450;
 }
 
 
@@ -102,52 +101,7 @@ a:active {
       }
   }
 
-/*==================================================
-                  BUTTON (Generic)
-====================================================*/
-
-.btn-general {
-    background-color: transparent;
-    text-align: center;
-    border-width: 1px;
-    border-radius: 0px;
-    font-size: 16px;
-    padding: 10px 15px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.btn-white {
-    border-color: #2196f3;
-    background-color: #2196f3;
-    color: #fff;
-}
-
-.btn-white:hover,
-.btn-white:focus {
-    background-color: transparent;
-    color: #2196f3;
-    cursor: pointer;
-}
-
-.btn-green {
-    border-color: #2196f3;
-    color: #2196f3;
-}
-
-.btn-green:hover,
-.btn-green:focus {
-    background-color: #2196f3;
-    color: #fff;
-    cursor: pointer;
-}
-
-/*==================================================
-                  SECTION (Generic)
-====================================================*/
-
-
-  section.resume-section {
+ section.resume-section {
       border-bottom: 1px solid #dee2e6;
       padding-top: 5rem !important;
       padding-bottom: 5rem !important;
@@ -180,10 +134,42 @@ a:active {
   .text-primary {
       color: #2196f3 !important;
   }
+  .btn-white {
+    border-color: #2196f3;
+    background-color: #2196f3;
+    color: #fff;
+}
+.btn-general {
+    background-color: transparent;
+    text-align: center;
+    border-width: 1px;
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 10px 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
 
-/*==================================================
-                      ABOUT
-====================================================*/
+
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: transparent;
+    color: #2196f3;
+    cursor: pointer;
+}
+
+.btn-green:hover,
+.btn-green:focus {
+    background-color: #2196f3;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-green {
+    border-color: #2196f3;
+    color: #2196f3;
+}
+
   #about {
       background-image: url(../img/p-3.jpg); 
       background-size: cover;
@@ -192,10 +178,6 @@ a:active {
   }
 
 
-
-/*==================================================
-                    EXPERIENCE
-====================================================*/  
   #experience {
     background: #f5f5f5;
   }
@@ -248,6 +230,15 @@ a:active {
 .skill-item i {
     color: #2196f3;
 }
+.skill-item p {
+    color: #fff;
+    font-family: "hind", sans-serif;
+  
+    font-weight: 300;
+    margin-top: 0;
+}
+
+
 
 .skill-item h2 {
     color: #fff;
@@ -258,26 +249,21 @@ a:active {
     margin-bottom: 1px;
 }
 
-.skill-item p {
-    color: #fff;
-    font-family: "hind", sans-serif;
-    /*text-transform: uppercase;*/
-    font-weight: 300;
-    margin-top: 0;
+
+
+
+ .social-icon-f li{
+  display: inline-block;
 }
-
-
-
-
-
- 
 .con-form input {
     border-color: #ccc;
     border-radius: 0;
     color: #717171;
     margin-top: 30px; 
 }
-
+.contact-box-desc h3 i{
+  color: #2196f3;
+}
 .con-form textarea {
     width: 100%; 
     height: 200px;
@@ -295,13 +281,9 @@ a:active {
   color:#555;
 }
 
-.contact-box-desc h3 i{
-  color: #2196f3;
-}
 
-.social-icon-f li{
-  display: inline-block;
-}
+
+
 
 .social-icon-f li i{
   height: 35px;
@@ -321,6 +303,11 @@ a:active {
     position: relative;
     padding: 60px 0;
 }
+#award-box .award {
+    width: 50%;
+    clear: both;
+    position: relative;
+}
 
 #award-box:before {
     content: "";
@@ -332,17 +319,36 @@ a:active {
     left: 50%;
 }
 
-#award-box .award {
-    width: 50%;
-    clear: both;
-    position: relative;
-}
 
 #award-box .award:before,
 #award-box .award:after {
     content: "";
     display: block;
     clear: both;
+}
+
+#award-box .award:last-child:before {
+    top: auto;
+    bottom: -54px;
+}
+
+#award-box .award:last-child:nth-child(even):before {
+    right: auto;
+    left: -11px;
+}
+#award-box .award:hover .award-icon:before {
+    background: #39b3ff;
+}
+#award-box .award-icon {
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border: 1px solid #cfcdcd;
+    position: absolute;
+    top: 17px;
+    right: -13px;
+    z-index: 1;
+    transform: rotate(45deg);
 }
 
 #award-box .award:first-child:before,
@@ -359,27 +365,8 @@ a:active {
     right: -11px;
     transform: rotate(45deg);
 }
-
-#award-box .award:last-child:before {
-    top: auto;
-    bottom: -54px;
-}
-
-#award-box .award:last-child:nth-child(even):before {
-    right: auto;
-    left: -11px;
-}
-
-#award-box .award-icon {
-    width: 24px;
-    height: 24px;
-    background: #fff;
+#award-box .award:hover .award-content {
     border: 1px solid #cfcdcd;
-    position: absolute;
-    top: 17px;
-    right: -13px;
-    z-index: 1;
-    transform: rotate(45deg);
 }
 
 #award-box .award-icon:before {
@@ -395,24 +382,18 @@ a:active {
     transition: background-color 0.2s ease 0s;
 }
 
-#award-box .award:hover .award-icon:before {
-    background: #39b3ff;
+
+
+#award-box .award-content:after {
+    content: "";
+    width: 11%;
+    height: 1px;
+    background: #cfcdcd;
+    position: absolute;
+    top: 28px;
+    right: -14%;
 }
 
-#award-box .award-content {
-    width: 85%;
-    padding: 18px 30px;
-    background: #fff;
-    text-align: right;
-    float: left;
-    border: 1px solid transparent;
-    position: relative;
-    transition: all 0.3s ease 0s;
-}
-
-#award-box .award:hover .award-content {
-    border: 1px solid #cfcdcd;
-}
 
 #award-box .award-content:before {
     content: "";
@@ -427,31 +408,6 @@ a:active {
     transform: rotate(45deg);
     transition: all 0.2s ease 0s;
 }
-
-#award-box .award:hover .award-content:before {
-    background: #39b3ff;
-    border-color: #39b3ff;
-}
-
-#award-box .award-content:after {
-    content: "";
-    width: 11%;
-    height: 1px;
-    background: #cfcdcd;
-    position: absolute;
-    top: 28px;
-    right: -14%;
-}
-
-#award-box .date {
-    display: block;
-    font-size: 15px;
-    font-weight: 600;
-    color: #39b3ff;
-    margin: 0 0 8px;
-    transition: all 0.3s ease 0s;
-}
-
 #award-box .award:hover .date {
     color: #444;
 }
@@ -462,6 +418,32 @@ a:active {
     margin-top: 0;
     transition: all 0.3s ease 0s;
 }
+#award-box .award:hover .award-content:before {
+    background: #39b3ff;
+    border-color: #39b3ff;
+}
+#award-box .award-content {
+    width: 85%;
+    padding: 18px 30px;
+    background: #fff;
+    text-align: right;
+    float: left;
+    border: 1px solid transparent;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+
+#award-box .date {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #39b3ff;
+    margin: 0 0 8px;
+    transition: all 0.3s ease 0s;
+}
+
+
 
 #award-box .award:hover .title {
     color: #39b3ff;
@@ -474,6 +456,16 @@ a:active {
     margin-top: 8px;
 }
 
+
+
+#award-box .award:nth-child(2n) .award-content:before {
+    left: -7.3px;
+}
+
+#award-box .award:nth-child(2n) .award-content:after {
+    left: -14%;
+}
+ 
 #award-box .award:nth-child(2n),
 #award-box .award:nth-child(2n) .award-content {
     float: right;
@@ -484,13 +476,3 @@ a:active {
     right: 0;
     left: -12px;
 }
-
-#award-box .award:nth-child(2n) .award-content:before {
-    left: -7.3px;
-}
-
-#award-box .award:nth-child(2n) .award-content:after {
-    left: -14%;
-}
- 
-
